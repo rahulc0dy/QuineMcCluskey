@@ -1,0 +1,124 @@
+@font-face {
+    font-family: "Noto";
+    src: url("Fonts/NotoSans-Regular.ttf");
+}
+:root {
+    --dark-primary: #042c3b;
+    --dark-secondary: #114d61;
+    --light-primary: #dafffb;
+    --light-secondary: #64ccc5;
+}
+html {
+    font-family: "Nunito", "Noto";
+    font-size: 18px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+body {
+    color: var(--light-primary);
+    background: var(--dark-primary);
+    min-height: 100dvh;
+    min-width: 100dvw;
+
+    display: grid;
+    justify-content: center;
+    padding-inline: 2%;
+    padding: 1rem 2rem;
+}
+
+/* Instructions and header Styles */
+.instructions {
+    max-width: 1200px;
+}
+
+.heading {
+    font-weight: 700;
+    font-size: 3rem;
+    margin-block: 0.6em;
+    color: transparent;
+    background-color: #ffdee9;
+    background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.heading-2 {
+    font-weight: 500;
+    margin-block: 1rem;
+    font-size: 1.6rem;
+}
+.step {
+    margin-block: 0.3rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.ins-text {
+    color: white;
+    font-weight: 100;
+}
+
+/* Form Styles */
+
+.input-form {
+    padding: 2rem;
+    margin-block: 1rem;
+    display: grid;
+
+    background-color: var(--dark-secondary);
+
+    border-radius: 0.5rem;
+
+    font-size: 1.5rem;
+}
+
+.form-header {
+    font-weight: 300;
+    font-size: 2rem;
+    color: var(--light-secondary);
+}
+
+.minimise-button {
+    background-image: linear-gradient(
+        to right,
+        #50c9c3 0%,
+        #96deda 51%,
+        #50c9c3 100%
+    );
+    font-size: 1rem;
+    font-weight: 600;
+    color: #021c25;
+
+    margin-block: 1rem;
+
+    padding: 0.8rem 2rem;
+    text-align: center;
+    transition: 0.4s;
+    background-size: 200% auto;
+    box-shadow: 0 0 0rem var(--light-primary);
+    border-radius: 10px;
+    display: block;
+    cursor: pointer;
+}
+
+.minimise-button:hover {
+    background-position: right center;
+    text-decoration: none;
+    box-shadow: 0 0 0.6rem var(--light-primary);
+}
+label {
+    margin-block: 0.5rem;
+}
+
+input {
+    display: block;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.2rem;
+    font-size: 1.3rem;
+    width: 100%;
+}
