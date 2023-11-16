@@ -30,6 +30,7 @@ body {
     justify-content: center;
     padding-inline: 2%;
     padding: 1rem 2rem;
+    overflow-x: hidden;
 }
 
 /* Instructions and header Styles */
