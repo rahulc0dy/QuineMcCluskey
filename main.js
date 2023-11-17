@@ -15,6 +15,5 @@ const handleSubmit = (e) => {
             minTerms.value.split(",").map((elem) => parseInt(elem)),
             dontCares.value.split(",").map((elem) => parseInt(elem))
         );
-    console.table(minTerms.value.split(",").map((elem) => parseInt(elem)));
-    console.table(dontCares.value.split(",").map((elem) => parseInt(elem)));
+    result.scrollIntoView();
 };
