@@ -66,7 +66,7 @@ Welcome to the Quine-McCluskey Minimization Program! This tool helps you simplif
 
 Let's go through the main functions and the overall flow of the code:
 
-#### diffByOneBit(term1, term2):
+#### `diffByOneBit(term1, term2)`
 
 -   This function checks if two binary terms differ by only one bit.
 -   It returns an array with two elements:
@@ -74,43 +74,43 @@ Let's go through the main functions and the overall flow of the code:
     -   The first element is a boolean indicating whether the terms differ by only one bit.
     -   The second element is the index of the differing bit.
 
-#### listConvert(dictionary):
+#### `listConvert(dictionary)`
 
 -   This function converts a dictionary of minterms into a list of minterms.
 
-#### findMinterms(implicant):
+#### `findMinterms(implicant)`
 
 -   This function generates all minterms covered by a given implicant.
 
-#### removeDontCares(minTerms, dontCares):
+#### `removeDontCares(minTerms, dontCares)`
 
 -   This function removes the don't care terms from the list of minterms.
 
-#### essentialPrimeImplicants(table):
+#### `essentialPrimeImplicants(table)`
 
 -   This function identifies essential prime implicants from the prime implicant chart.
 
-#### removeTerms(table, terms):
+#### `removeTerms(table, terms)`
 
 -   This function removes terms from the prime implicant chart.
 
-#### coveringPrimeImplicants(table):
+#### `coveringPrimeImplicants(table)`
 
 -   This function identifies covering prime implicants from the prime implicant chart.
 
-#### isSubset(arr1, arr2):
+#### `isSubset(arr1, arr2)`
 
 -   This function checks if arr1 is a subset of arr2.
 
-#### arraysEqual(arr1, arr2):
+#### `arraysEqual(arr1, arr2)`
 
 -   This function checks if two arrays are equal.
 
-#### makeExpression(epi):
+#### `makeExpression(epi)`
 
 -   This function creates a boolean expression from a list of essential prime implicants.
 
-#### quineMcclusky(minterms, dontCare):
+#### `quineMcclusky(minterms, dontCare)`
 
 -   This is the main function that performs the Quine-McCluskey algorithm.
 -   It starts by creating groups of minterms based on the number of 1s in their binary representation.
