@@ -1,3 +1,44 @@
+<div align="center">
+  <a href="https://rahulc0dy.github.io/QuineMcCluskey">
+    <img
+      src="Q.png"
+      alt="Quine McCluskey"
+      height="64"
+    />
+  </a>
+  <h3>
+    <b>
+      Quine McCluskey
+    </b>
+  </h3>
+  <b>
+    Multi Variable Boolean function minimization Algorithm
+  </b>
+  <p>
+
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen?logo=github)](CODE_OF_CONDUCT.md) [![Website](https://img.shields.io/website?url=https%3A%2F%2Fhoppscotch.io&logo=hoppscotch)](https://rahulc0dy.github.io/QuineMcCluskey) [![Tests](https://github.com/hoppscotch/hoppscotch/actions/workflows/tests.yml/badge.svg)](https://github.com/hoppscotch/hoppscotch/actions)
+
+  </p>
+  <p>
+    <sub>
+      Built with ❤︎ by
+      <a href="https://github.com/rahulc0dy/QuineMcCluskey/graphs/contributors">
+        contributors
+      </a>
+    </sub>
+  </p>
+  <br />
+  <p>
+    <a href="https://rahulc0dy.github.io/QuineMcCluskey">
+      <picture>
+        <!-- <source media="(prefers-color-scheme: dark)" srcset="./packages/hoppscotch-common/public/images/banner-dark.png">
+        <source media="(prefers-color-scheme: light)" srcset="./packages/hoppscotch-common/public/images/banner-light.png"> -->
+        <img alt="QM" src="images/screenshot3.png" style="border-radius:.2rem">
+      </picture>
+    </a>
+  </p>
+</div>
+
 ## 📄 Instructions
 
 Welcome to the Quine-McCluskey Minimization Program! This tool helps you simplify Boolean functions using the Quine-McCluskey algorithm. Follow these steps to minimize your Boolean expression:
@@ -20,6 +61,64 @@ Welcome to the Quine-McCluskey Minimization Program! This tool helps you simplif
 ## 🥷 Authors
 
 -   [Rahul Chakraborty](https://www.github.com/rahulc0dy)
+
+## 🪟 Code Overview
+
+Let's go through the main functions and the overall flow of the code:
+
+#### diffByOneBit(term1, term2):
+
+-   This function checks if two binary terms differ by only one bit.
+-   It returns an array with two elements:
+
+    -   The first element is a boolean indicating whether the terms differ by only one bit.
+    -   The second element is the index of the differing bit.
+
+#### listConvert(dictionary):
+
+-   This function converts a dictionary of minterms into a list of minterms.
+
+#### findMinterms(implicant):
+
+-   This function generates all minterms covered by a given implicant.
+
+#### removeDontCares(minTerms, dontCares):
+
+-   This function removes the don't care terms from the list of minterms.
+
+#### essentialPrimeImplicants(table):
+
+-   This function identifies essential prime implicants from the prime implicant chart.
+
+#### removeTerms(table, terms):
+
+-   This function removes terms from the prime implicant chart.
+
+#### coveringPrimeImplicants(table):
+
+-   This function identifies covering prime implicants from the prime implicant chart.
+
+#### isSubset(arr1, arr2):
+
+-   This function checks if arr1 is a subset of arr2.
+
+#### arraysEqual(arr1, arr2):
+
+-   This function checks if two arrays are equal.
+
+#### makeExpression(epi):
+
+-   This function creates a boolean expression from a list of essential prime implicants.
+
+#### quineMcclusky(minterms, dontCare):
+
+-   This is the main function that performs the Quine-McCluskey algorithm.
+-   It starts by creating groups of minterms based on the number of 1s in their binary representation.
+-   It iteratively combines adjacent groups to generate new groups until no more combinations are possible.
+-   The prime implicants are then extracted from the final groups.
+-   The prime implicant chart is created, and essential prime implicants are identified.
+-   If there are no essential prime implicants, covering prime implicants are used.
+-   The final boolean expression is created using the selected prime implicants.
 
 ## 🔘 Color Reference
 
