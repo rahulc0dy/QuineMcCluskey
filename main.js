@@ -2,14 +2,12 @@ import * as QM from "./QuineMcCluskey.js";
 
 if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("/service_worker.js", { scope: "/" }).then(
-        () => {
-            console.info("Service Worker Registered");
-        },
+        () => {},
         (err) => console.error("Service Worker registration failed: ", err)
     );
 
     navigator.serviceWorker.ready.then(() => {
-        console.info("Developer for Life Service Worker Ready");
+        // console.info("Service Worker Ready");
     });
 }
 
