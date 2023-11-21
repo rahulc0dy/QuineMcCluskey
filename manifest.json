@@ -1,8 +1,10 @@
 {
     "name": "QM",
-    "start_url": "/",
+    "start_url": ".",
+    "description": "This is an algorithm for the quine McCluskey minimisation technique",
     "display": "standalone",
     "theme_color": "#042c3b",
+    "background_color": "#042c3b",
     "icons": [
         {
             "src": "/Q.png",

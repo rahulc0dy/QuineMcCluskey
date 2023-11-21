@@ -267,8 +267,6 @@ function quineMcclusky(minterms, dontCare) {
     return makeExpression(EPI).length == 0 ? 1 : makeExpression(EPI);
 }
 
-console.log(quineMcclusky([2, 3, 4, 5], []));
-
 export {
     quineMcclusky,
     makeExpression,
